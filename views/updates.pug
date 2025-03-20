@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1= title
+    form(action="/update-cobj" method="post")
+      label(for="name") Name:
+      input(type="text" name="name" required)
+      br
+      label(for="bio") Bio:
+      input(type="text" name="bio")
+      br
+      label(for="category") Category:
+      input(type="text" name="category")
+      br
+      button(type="submit") Submit
+    br
+    a(href="/") Return to the homepage
